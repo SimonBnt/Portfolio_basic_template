@@ -17,15 +17,47 @@
 <body>
     <header>
         <div id="logoContainer">
-            <img src="" alt="">
+            <img src="https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Portrait/logo">
             <span>Your Name</span>
         </div>
-        <div id="quickAccessBar">
-            <!-- menu burger get script -->
+        <div id="navbar">
             <ul>
-                <li class="quickAccess">home</li>
-                <li class="quickAccess">about</li>
-                <li class="quickAccess">projects</li>
+                <li class="quickAccess">
+                    <a href="#homeSection" title="Home section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#aboutSection" title="About section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#projectsSection" title="Projects section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#contactSection" title="Contact section quick access"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="burgerMenuOpenerContainer">
+            <div id="menuBurgerOpenerContainer">
+                <img src="https://cdn-icons-png.flaticon.com/128/4254/4254068.png" alt="Burger menu icone">
+            </div>
+            <div id="menuBurgerCloserContainer">
+                <img src="https://cdn-icons-png.flaticon.com/128/6423/6423881.png" alt="Close icone">
+            </div>
+        </div>
+        <div id="burgerMenu">
+            <ul>
+                <li class="quickAccess">
+                    <a href="#homeSection" title="Home section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#aboutSection" title="About section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#projectsSection" title="Projects section quick access"></a>
+                </li>
+                <li class="quickAccess">
+                    <a href="#contactSection" title="Contact section quick access"></a>
+                </li>
             </ul>
         </div>
     </header>
@@ -33,20 +65,125 @@
 
         <!-- Home Section -->
         
-        <section>
-            <h1></h1>
+        <section id="homeSection">
+            <div class="homeContentContainers">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+            </div>
+            <div class="homeContentContainers">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis ipsa facilis obcaecati! Explicabo at temporibus nam laboriosam rerum id rem!</p>
+            </div>
+            <div class="homeContentContainers">
+                <a class="CTA" href="#projectsSection" title="Projects section quick access">Projects</a>
+            </div>
+
+            <!-- home right sidenav -->
+
+            <div id="rightSidenavContainer">
+                <ul>
+                    <li class="homeSocialIcons">in
+                        <img src="" alt="">
+                    </li>
+                    <li class="homeSocialIcons">fa
+                        <img src="" alt="">
+                    </li>
+                    <li class="homeSocialIcons">twi
+                        <img src="" alt="">
+                    </li>
+                    <li class="homeSocialIcons">insta
+                        <img src="" alt="">
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <!-- About Section -->
         
-        <section>
-            <h2 class="sectionTitle"></h2>
+        <section id="aboutSection">
+            <div class="sectionTopContainers">
+                <h2 class="sectionTitle">about</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium assumenda quidem ullam quibusdam perferendis reprehenderit accusantium, error numquam id impedit aut sit beatae odit qui labore ad minima? Qui.</p>
+            </div>
+            <div id="aboutSectionMainContainer">
+
+                <!-- bio -->
+
+                <div id="bioContainer" class="aboutSectionContainers">
+                    <h3 class="aboutSectionTitles">More about me</h3>
+                    <p class="bioP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis facilis enim fuga! Similique reprehenderit labore sed asperiores quod, voluptatibus fuga.</p>
+                    <p class="bioP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis facilis enim fuga! Similique reprehenderit labore sed asperiores quod, voluptatibus fuga.</p>
+                    <p class="bioP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis facilis enim fuga! Similique reprehenderit labore sed asperiores quod, voluptatibus fuga.</p>
+                </div>
+                <div class="contactContainers">
+                    <a href="mailto:" class="CTA" title="Contact me" target="_blank"></a>
+                </div>
+
+                <!-- skills -->
+
+                <div id="skillsContainer" class="aboutSectionContainers">
+                    <h3 class="aboutSectionTitles">Skills</h3>
+                    <div id="skillsContainer">
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                        <div class="skills">Lorem</div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects Section -->
 
-        <section>
-            <h2 class="sectionTitle"></h2>
+        <section id="projectsSection">
+            <div class="sectionTopContainers">
+                <h2 class="sectionTitle">projects</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae cumque quasi debitis illo consequuntur, temporibus exercitationem pariatur itaque impedit!</p>
+            </div>
+            <div id="projectsSectionMainContainer">
+                <div class="projectsContainers">
+                    <div class="projectsImgContainers ">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="projectsContainers">
+                    <h4 class="projectsTitles"></h4>
+                </div>
+                <div class="projectsContainers">
+                    <p class="projectsDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor, sint quaerat qui minus incidunt perspiciatis consectetur aspernatur. Nesciunt omnis quo libero impedit delectus vero labore dolorem, voluptatem molestias maiores.
+                    </p>
+                </div>
+            </div>
+            <div id="projectsSectionMainContainer">
+                <div class="projectsContainers">
+                    <div class="projectsImgContainers ">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="projectsContainers">
+                    <h4 class="projectsTitles"></h4>
+                </div>
+                <div class="projectsContainers">
+                    <p class="projectsDescription">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolor, sint quaerat qui minus incidunt perspiciatis consectetur aspernatur. Nesciunt omnis quo libero impedit delectus vero labore dolorem, voluptatem molestias maiores.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+
+
+        <section id="contactSection">
+            <div class="sectionTopContainers">
+                <h2 class="sectionTitle">contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores repudiandae cumque quasi debitis illo consequuntur, temporibus exercitationem pariatur itaque impedit!</p>
+                <div class="contactContainers">
+                    <a href="mailto:" class="CTA" title="Contact me" target="_blank"></a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
