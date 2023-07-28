@@ -5,6 +5,16 @@ main {
         padding: 2rem 1rem;
         line-height: 1.5rem;
 
+        .defaultMainContainer {
+            @include respondTo(md) {
+                margin: 0 12rem;
+            }
+
+            @include respondTo(lg) {
+                margin: 0 20rem;
+            }
+        }
+
         .sectionTopContainers {
             text-align: center;
             margin-bottom: 4rem;
@@ -15,6 +25,10 @@ main {
                 position: relative;
                 margin-bottom: 3rem;
                 color: black;
+                
+                @include respondTo(md) {
+                    font-size: 2rem;
+                }
 
                 &::after {
                     content: "";
@@ -30,6 +44,10 @@ main {
             }
 
             p {
+                @include respondTo(md) {
+                    font-size: 1.25rem;
+                }
+
                 strong {
                     color: #0671C4;
                 }
@@ -47,58 +65,74 @@ main {
         background-color: #EEEEEE;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='119' height='119' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23c6c6c6' fill-opacity='0.02'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.02'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 
-        .homeContentContainers {
-            margin: 1rem 0;
+        #homeContentMainContainer {
+            .homeContentContainers {
+                margin: 4rem 0;
 
-            h1 {
-                color: #0671C4;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                text-align: center;
+                @include respondTo(md) {
+                    margin: 6rem 0;
+                }
+    
+                h1 {
+                    color: #0671C4;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    text-align: center;
+    
+                    @include respondTo(md) {
+                        font-size: 3rem;
+                    }
+                }
+                
+                p {
+                    font-weight: bolder;
+                    text-align: center;
+    
+                    @include respondTo(md) {
+                        font-size: 1.5rem;
+                    }
+                }
             }
-            
-            p {
-                font-weight: bolder;
-                text-align: center;
-            }
-        }
-
-        #rightSidenavContainer {
-            display: none;
-
-            @include respondTo(md) {
-                display: block;
-                position: absolute;
-                right: 0;
-                background-color: white;
-                padding: 1rem 0.5rem;
-                border: solid black 1px;
-                border-right: none;
-                border-top-left-radius: 0.25rem;
-                border-bottom-left-radius: 0.25rem;
-            }
-
-            ul {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem 0;
-
-                li {
-                    img {
-                        width: 24px;
-                        transition: 0.3s;
-
-                        @include respondTo(md) {
-                            cursor: pointer;
-                    
-                            &:hover {
-                                transition: 0.3s;
-                                transform: translateY(-2px);
-                            }
-                    
-                            &:active {
-                                transform: translateY(3px);
-                                transform: translateX(3px);
+    
+            #rightSidenavContainer {
+                display: none;
+    
+                @include respondTo(md) {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: 35%;
+                    background-color: white;
+                    padding: 2rem 0.5rem;
+                    border: solid black 1px;
+                    border-right: none;
+                    border-top-left-radius: 0.25rem;
+                    border-bottom-left-radius: 0.25rem;
+                }
+    
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem 0;
+    
+                    li {
+                        img {
+                            width: 24px;
+                            transition: 0.3s;
+    
+                            @include respondTo(md) {
+                                cursor: pointer;
+                                width: 36px;
+                        
+                                &:hover {
+                                    transition: 0.3s;
+                                    transform: translateY(-2px);
+                                }
+                        
+                                &:active {
+                                    transform: translateY(3px);
+                                    transform: translateX(3px);
+                                }
                             }
                         }
                     }
@@ -111,14 +145,29 @@ main {
         background-color: #f8f8f8;
 
         #aboutSectionMainContainer {
+            @include respondTo(md) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 4rem;
+            }
+
             .aboutSectionContainers {
                 text-align: center;
 
+                @include respondTo(md) {
+                    text-align: inherit;
+                }
+                
                 h3 {
                     color: black;
                     margin: 1.5rem 0;
                     text-transform: uppercase;
                     position: relative;
+                    
+                    @include respondTo(md) {
+                        margin-bottom: 3rem;
+                        font-size: 1.5rem;
+                    }
 
                     &::after {
                         content: "";
@@ -128,8 +177,12 @@ main {
                         position: absolute;
                         left: 3rem;
                         bottom: 50%;
-                    }
 
+                        @include respondTo(md) {
+                            display: none;
+                        }
+                    }
+                    
                     &::before {
                         content: "";
                         width: 20px;
@@ -138,11 +191,22 @@ main {
                         position: absolute;
                         right: 3rem;
                         bottom: 50%;
+
+                        @include respondTo(md) {
+                            display: none;
+                        }
                     }
                 }
             }
 
+            .bioP {
+                margin-top: 2rem;
+            }
+
             p {
+                @include respondTo(md) {
+                    font-size: 1.25rem;
+                }
                 strong {
                     color: #0671C4;
                 }
@@ -161,15 +225,33 @@ main {
                     padding: 0.25rem;
                     border-radius: 0.25rem;
                     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+                    @include respondTo(md) {
+                        font-size: 1.25rem;
+                    }
+                }
+                
+                .block {
+                    display: none;
+                    
+                    @include respondTo(md) {
+                        display: block;
+                    }
                 }
             }
         }
     }
-
+    
     #projectsSection {
         background-color: #ffffff;
-
+        
         #projectsSectionMainContainer {
+            @include respondTo(md) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0 2rem;
+            }
+
             .projectsMainContainers {
                 position: relative;
                 margin-bottom: 4rem;
@@ -183,6 +265,10 @@ main {
                     bottom: -20px;
                     left: 50%;
                     transform: translateX(-50%);
+
+                    @include respondTo(md) {
+                        display: none;
+                    }
                 }
 
                 .projectsContainers {
@@ -193,13 +279,26 @@ main {
                         border: #333 solid 4px ;
                         border-radius: 0.5rem;
                         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                        width: 75%;
+
+                        @include respondTo(md) {
+                            width: 50%;
+                        }
                     }
 
                     h4 {
                         text-transform: uppercase;
+
+                        @include respondTo(lg) {
+                            font-size: 1.35rem;
+                        }
                     }
 
                     .projectsDescription {
+                        @include respondTo(lg) {
+                            font-size: 1.25rem;
+                        }
+
                         strong {
                             color: #0671C4;
                         }

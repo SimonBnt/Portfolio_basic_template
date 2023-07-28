@@ -19,6 +19,10 @@ header {
             align-items: center;
             gap: 0 1rem;
             width: 100%;
+
+            @include respondTo(md) {
+                margin-left: 4rem;
+            }
     
             img {
                 width: 42px;
@@ -40,9 +44,13 @@ header {
             ul {
                 display: flex;
                 gap: 0 2rem;
+                
+                @include respondTo(md) {
+                    gap: 0 4rem;
+                    margin-right: 4rem;
+                }
     
                 li {
-    
                     a {
                         color: #333;
                         text-decoration: none;
@@ -53,6 +61,11 @@ header {
                                 color: #0671C4;
                                 cursor: pointer;
                                 transition: 0.3s;
+                            }
+
+                            &:active {
+                                color: #05406d;
+                                transition: none;
                             }
                         }
                     }
