@@ -1,5 +1,52 @@
 footer {
-    background-color: #111;
+    background-color: black;
     color: white;
     padding: 1rem;
+
+    #footerMainContainer {
+        #footerBioContainer {
+            #footerName {
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                font-weight: bold;
+            }
+            
+            #footerBio {
+                line-height: 1.25rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        #footerSocialContainer {
+            h2 {
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+            
+            ul {
+                margin-bottom: 1rem;
+                display: flex;
+                gap: 0 2rem;
+
+                li {
+                    border: solid white 1px;
+                    border-radius: 0.5rem;
+                    padding: 0.25rem;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    #propertyContainer {
+        p {
+            a {
+                color: #0671C4;
+                text-decoration: none;
+            }
+        }
+    }
 }

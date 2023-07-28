@@ -1,6 +1,6 @@
 .ctaContainers {
     text-align: center;
-    margin: 4rem 0 2rem 0 !important;
+    margin: 4rem 0 4rem 0 !important;
     transition: 0.3s;
     
     @include respondTo(md) {
@@ -28,6 +28,7 @@
         border-radius: 0.25rem;
         padding: 0.75rem;
         transition: 0.3s;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 
         @include respondTo(md) {
             &:hover {
