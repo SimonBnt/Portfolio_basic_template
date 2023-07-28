@@ -7,7 +7,7 @@ main {
 
         .defaultMainContainer {
             @include respondTo(md) {
-                margin: 0 12rem;
+                margin: 0 8rem;
             }
 
             @include respondTo(lg) {
@@ -26,6 +26,10 @@ main {
                 margin-bottom: 3rem;
                 color: black;
                 
+                @include respondTo(sm) {
+                    font-size: 1.75rem;
+                }
+
                 @include respondTo(md) {
                     font-size: 2rem;
                 }
@@ -44,12 +48,22 @@ main {
             }
 
             p {
+                @include respondTo(sm) {
+                    font-size: 1.15rem;
+                }
+
                 @include respondTo(md) {
                     font-size: 1.25rem;
                 }
 
                 strong {
                     color: #0671C4;
+                }
+            }
+
+            .projectP {
+                @include respondTo(md) {
+                    margin: 0 8rem;
                 }
             }
         }
@@ -78,8 +92,18 @@ main {
                     text-transform: uppercase;
                     font-size: 1.5rem;
                     text-align: center;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    letter-spacing: 0.25rem;
+
+                    @include respondTo(sm) {
+                        font-size: 2rem;
+                    }
     
                     @include respondTo(md) {
+                        font-size: 2.5rem;
+                    }
+
+                    @include respondTo(lg) {
                         font-size: 3rem;
                     }
                 }
@@ -87,6 +111,10 @@ main {
                 p {
                     font-weight: bolder;
                     text-align: center;
+
+                    @include respondTo(sm) {
+                        font-size: 1.25rem;
+                    }
     
                     @include respondTo(md) {
                         font-size: 1.5rem;
@@ -164,6 +192,10 @@ main {
                     text-transform: uppercase;
                     position: relative;
                     
+                    @include respondTo(sm) {
+                        font-size: 1.25rem;
+                    }
+
                     @include respondTo(md) {
                         margin-bottom: 3rem;
                         font-size: 1.5rem;
@@ -178,7 +210,7 @@ main {
                         left: 3rem;
                         bottom: 50%;
 
-                        @include respondTo(md) {
+                        @include respondTo(sm) {
                             display: none;
                         }
                     }
@@ -192,7 +224,7 @@ main {
                         right: 3rem;
                         bottom: 50%;
 
-                        @include respondTo(md) {
+                        @include respondTo(sm) {
                             display: none;
                         }
                     }
@@ -204,9 +236,14 @@ main {
             }
 
             p {
+                @include respondTo(sm) {
+                    font-size: 1.15rem;
+                }
+
                 @include respondTo(md) {
                     font-size: 1.25rem;
                 }
+
                 strong {
                     color: #0671C4;
                 }
@@ -225,6 +262,10 @@ main {
                     padding: 0.25rem;
                     border-radius: 0.25rem;
                     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+                    @include respondTo(sm) {
+                        font-size: 1.15rem;
+                    }
 
                     @include respondTo(md) {
                         font-size: 1.25rem;
@@ -289,12 +330,20 @@ main {
                     h4 {
                         text-transform: uppercase;
 
+                        @include respondTo(sm) {
+                            font-size: 1.25rem;
+                        }
+
                         @include respondTo(lg) {
                             font-size: 1.35rem;
                         }
                     }
 
                     .projectsDescription {
+                        @include respondTo(sm) {
+                            font-size: 1.15rem;
+                        }
+
                         @include respondTo(lg) {
                             font-size: 1.25rem;
                         }

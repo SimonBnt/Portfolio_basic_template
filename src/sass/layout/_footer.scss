@@ -24,6 +24,10 @@ footer {
                 margin-bottom: 1rem;
                 font-weight: bold;
 
+                @include respondTo(sm) {
+                    font-size: 1.15rem;
+                }
+
                 @include respondTo(lg) {
                     margin-bottom: 2rem;
                 }
@@ -33,6 +37,11 @@ footer {
                 line-height: 1.25rem;
                 margin-bottom: 1rem;
                 opacity: 0.7;
+                
+                @include respondTo(sm) {
+                    font-size: 1.15rem;
+                    margin-bottom: 2rem;
+                }
             }
         }
 
@@ -40,6 +49,10 @@ footer {
             h2 {
                 text-transform: uppercase;
                 margin-bottom: 1.5rem;
+
+                @include respondTo(sm) {
+                    font-size: 1.25rem;
+                }
 
                 @include respondTo(lg) {
                     margin-bottom: 2rem;
@@ -69,9 +82,15 @@ footer {
     
     #propertyContainer {
         text-align: center;
+
+        @include respondTo(sm) {
+            font-size: 1.15rem;
+        }
+
         @include respondTo(lg) {
             margin-bottom: 2rem;
             color: #ffffff;
+            font-size: 1.25rem;
         }
 
         p {
