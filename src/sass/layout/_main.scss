@@ -40,7 +40,7 @@ main {
                     bottom: -20px;
                     left: 50%;
                     transform: translateX(-50%);
-                    background-color: #0671C4;
+                    background-color: $color1;
                     width: 80px;
                     height: 4px;
                     border-radius: 0.5rem;
@@ -57,7 +57,7 @@ main {
                 }
 
                 strong {
-                    color: #0671C4;
+                    color: $color1;
                 }
             }
 
@@ -88,7 +88,7 @@ main {
                 }
     
                 h1 {
-                    color: #0671C4;
+                    color: $color1;
                     text-transform: uppercase;
                     font-size: 1.5rem;
                     text-align: center;
@@ -136,6 +136,7 @@ main {
                     border-right: none;
                     border-top-left-radius: 0.25rem;
                     border-bottom-left-radius: 0.25rem;
+                    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.6);
                 }
     
                 ul {
@@ -245,7 +246,7 @@ main {
                 }
 
                 strong {
-                    color: #0671C4;
+                    color: $color1;
                 }
             }
         }
@@ -261,7 +262,7 @@ main {
                     background-color: rgb(6, 113, 196, 0.2);
                     padding: 0.25rem;
                     border-radius: 0.25rem;
-                    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+                    box-shadow: $boxShadow;
 
                     @include respondTo(sm) {
                         font-size: 1.15rem;
@@ -319,7 +320,7 @@ main {
                     img {
                         border: #333 solid 4px ;
                         border-radius: 0.5rem;
-                        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+                        box-shadow: $boxShadow;
                         width: 75%;
 
                         @include respondTo(md) {
@@ -349,7 +350,7 @@ main {
                         }
 
                         strong {
-                            color: #0671C4;
+                            color: $color1;
                         }
                     }
                 }
